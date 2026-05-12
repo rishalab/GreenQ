@@ -90,7 +90,8 @@
                     }
                 });
                 
-                document.getElementById('markdownCode').innerText = `[![GreenQ Score](http://localhost:3000/api/badge/${data.user}/${data.repo})](http://localhost:3000/)`;
+                const baseUrl = window.location.origin;
+                document.getElementById('markdownCode').innerText = `[![GreenQ Score](${baseUrl}/api/badge/${data.user}/${data.repo})](${baseUrl}/)`;
                 
             } catch (e) {
                 alert('Analysis failed. Please check the console.');
