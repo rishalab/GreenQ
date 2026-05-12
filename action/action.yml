@@ -1,0 +1,13 @@
+name: 'GreenQ Sustainability Action'
+description: 'Analyze repository energy sustainability and post status badges'
+inputs:
+  min_grade:
+    description: 'Minimum required grade (A, B, C, D, F)'
+    required: false
+    default: 'C'
+runs:
+  using: 'node20'
+  main: 'index.js'
+branding:
+  icon: 'zap'
+  color: 'green'

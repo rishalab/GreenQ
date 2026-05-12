@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenQ | Sustainability Dashboard</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #f6f8fa; color: #24292e; margin: 0; padding: 40px; }
+        .container { max-width: 800px; margin: 0 auto; background: white; padding: 40px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+        h1 { margin-top: 0; display: flex; align-items: center; gap: 10px; }
+        .input-group { display: flex; gap: 10px; margin-bottom: 30px; }
+        input { flex: 1; padding: 12px; border: 1px solid #d1d5da; border-radius: 6px; font-size: 16px; }
+        button { padding: 12px 24px; background: #2ea44f; color: white; border: none; border-radius: 6px; font-weight: 600; cursor: pointer; }
+        button:hover { background: #2c974b; }
+        .results { display: none; margin-top: 30px; border-top: 1px solid #e1e4e8; padding-top: 30px; }
+        .badge-display { display: flex; align-items: center; gap: 20px; margin-bottom: 20px; }
+        .grade { font-size: 48px; font-weight: 800; color: #2ea44f; }
+        .metrics-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .metric-card { background: #f8f9fa; padding: 15px; border-radius: 6px; border: 1px solid #e1e4e8; }
+        .metric-val { font-size: 20px; font-weight: 700; }
+        .metric-label { font-size: 12px; color: #586069; text-transform: uppercase; }
+        pre { background: #272822; color: #f8f8f2; padding: 15px; border-radius: 6px; overflow-x: auto; }
+        .loading { display: none; color: #586069; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌱 GreenQ</h1>
+        <p>Enter a GitHub repository URL to generate a Sustainability Badge.</p>
+        <div class="input-group">
+            <input type="text" id="repoUrl" placeholder="https://github.com/facebook/react">
+            <button onclick="analyze()">Analyze</button>
+        </div>
+        <div id="loading" class="loading">Analyzing repository metrics... this may take a few seconds.</div>
+        <div id="results" class="results">
+            <div class="badge-display">
+                <div id="grade" class="grade">A</div>
+                <div>
+                    <div id="repoName" style="font-size: 24px; font-weight: 600;">user/repo</div>
+                    <div id="scoreLabel">Sustainability Score: 92/100</div>
+                </div>
+            </div>
+            <div class="metrics-grid" id="metricsGrid"></div>
+            <h3 style="margin-top: 30px;">README Embedding</h3>
+            <p>Add this to your README.md to show your live energy grade:</p>
+            <pre id="markdownCode">[![GreenQ Score](http://localhost:3000/api/badge/user/repo)](http://localhost:3000/)</pre>
+        </div>
+    </div>
+
+    <script>
+        async function analyze() {
+            const url = document.getElementById('repoUrl').value;
+            if (!url) return;
+            
+            document.getElementById('loading').style.display = 'block';
+            document.getElementById('results').style.display = 'none';
+
+            try {
+                const res = await fetch('/api/analyze', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ url })
+                });
+                const data = await res.json();
+                
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('results').style.display = 'block';
+                
+                document.getElementById('grade').innerText = data.grade;
+                document.getElementById('repoName').innerText = `${data.user}/${data.repo}`;
+                document.getElementById('scoreLabel').innerText = `Sustainability Score: ${data.score}/100`;
+                
+                const grid = document.getElementById('metricsGrid');
+                grid.innerHTML = '';
+                const labels = {
+                    ad: 'Allocation Density',
+                    iof: 'I/O Frequency',
+                    sldi: 'Spatial Locality Degradation',
+                    sri: 'Serialization/Reflection',
+                    pcf: 'Polling Factor',
+                    bmv: 'Branch Misprediction'
+                };
+                
+                Object.entries(data.metrics).forEach(([k, v]) => {
+                    if (labels[k]) {
+                        const card = document.createElement('div');
+                        card.className = 'metric-card';
+                        card.innerHTML = `<div class="metric-val">${v.toFixed(2)}</div><div class="metric-label">${labels[k]}</div>`;
+                        grid.appendChild(card);
+                    }
+                });
+                
+                document.getElementById('markdownCode').innerText = `[![GreenQ Score](http://localhost:3000/api/badge/${data.user}/${data.repo})](http://localhost:3000/)`;
+                
+            } catch (e) {
+                alert('Analysis failed. Please check the console.');
+                document.getElementById('loading').style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

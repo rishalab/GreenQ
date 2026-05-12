@@ -1,0 +1,1022 @@
+[
+  {
+    "name": "system-design-primer",
+    "lang": "python",
+    "loc": 1088,
+    "metrics": {
+      "ad": 0,
+      "iof": 0,
+      "dfl": 0,
+      "sldi": 29,
+      "sri": 0,
+      "pcf": 10.4,
+      "bmv": 24,
+      "edbf": 0
+    },
+    "score": 96,
+    "grade": "B"
+  },
+  {
+    "name": "Python",
+    "lang": "python",
+    "loc": 6439,
+    "metrics": {
+      "ad": 2,
+      "iof": 46,
+      "dfl": 0,
+      "sldi": 48,
+      "sri": 46,
+      "pcf": 23.5,
+      "bmv": 188,
+      "edbf": 0
+    },
+    "score": 95,
+    "grade": "C"
+  },
+  {
+    "name": "AutoGPT",
+    "lang": "python",
+    "loc": 20396,
+    "metrics": {
+      "ad": 62,
+      "iof": 32,
+      "dfl": 0,
+      "sldi": 477,
+      "sri": 424,
+      "pcf": 171,
+      "bmv": 346,
+      "edbf": 0
+    },
+    "score": 90,
+    "grade": "C"
+  },
+  {
+    "name": "stable-diffusion-webui",
+    "lang": "python",
+    "loc": 21734,
+    "metrics": {
+      "ad": 117,
+      "iof": 78,
+      "dfl": 27007.654872549923,
+      "sldi": 1610,
+      "sri": 699,
+      "pcf": 37.8,
+      "bmv": 1012,
+      "edbf": 0.008308518356627718
+    },
+    "score": 81,
+    "grade": "D"
+  },
+  {
+    "name": "yt-dlp",
+    "lang": "python",
+    "loc": 36756,
+    "metrics": {
+      "ad": 112,
+      "iof": 146,
+      "dfl": 0,
+      "sldi": 589,
+      "sri": 859,
+      "pcf": 188.3,
+      "bmv": 1592,
+      "edbf": 0
+    },
+    "score": 88,
+    "grade": "C"
+  },
+  {
+    "name": "transformers",
+    "lang": "python",
+    "loc": 59771,
+    "metrics": {
+      "ad": 238,
+      "iof": 326,
+      "dfl": 0,
+      "sldi": 2363,
+      "sri": 2343,
+      "pcf": 29.8,
+      "bmv": 3450,
+      "edbf": 0
+    },
+    "score": 82,
+    "grade": "D"
+  },
+  {
+    "name": "HelloGitHub",
+    "lang": "javascript",
+    "loc": 1,
+    "metrics": {
+      "ad": 0,
+      "iof": 0,
+      "dfl": 0,
+      "sldi": 0,
+      "sri": 0,
+      "pcf": 0,
+      "bmv": 0,
+      "edbf": 0
+    },
+    "score": 100,
+    "grade": "A"
+  },
+  {
+    "name": "langflow",
+    "lang": "python",
+    "loc": 13761,
+    "metrics": {
+      "ad": 32,
+      "iof": 22,
+      "dfl": 0,
+      "sldi": 131,
+      "sri": 506,
+      "pcf": 10.6,
+      "bmv": 376,
+      "edbf": 0
+    },
+    "score": 89,
+    "grade": "C"
+  },
+  {
+    "name": "hermes-agent",
+    "lang": "python",
+    "loc": 107976,
+    "metrics": {
+      "ad": 220,
+      "iof": 636,
+      "dfl": 0,
+      "sldi": 1923,
+      "sri": 4140,
+      "pcf": 1106.1999999999998,
+      "bmv": 5522,
+      "edbf": 0
+    },
+    "score": 85,
+    "grade": "D"
+  },
+  {
+    "name": "youtube-dl",
+    "lang": "python",
+    "loc": 39829,
+    "metrics": {
+      "ad": 161,
+      "iof": 132,
+      "dfl": 0,
+      "sldi": 253,
+      "sri": 791,
+      "pcf": 439.4,
+      "bmv": 1688,
+      "edbf": 0
+    },
+    "score": 87,
+    "grade": "C"
+  },
+  {
+    "name": "open-webui",
+    "lang": "python",
+    "loc": 61299,
+    "metrics": {
+      "ad": 154,
+      "iof": 433,
+      "dfl": 0,
+      "sldi": 1445,
+      "sri": 2322,
+      "pcf": 5.1,
+      "bmv": 2460,
+      "edbf": 0
+    },
+    "score": 86,
+    "grade": "D"
+  },
+  {
+    "name": "langchain",
+    "lang": "python",
+    "loc": 41831,
+    "metrics": {
+      "ad": 139,
+      "iof": 46,
+      "dfl": 0,
+      "sldi": 172,
+      "sri": 897,
+      "pcf": 0,
+      "bmv": 1076,
+      "edbf": 0
+    },
+    "score": 91,
+    "grade": "C"
+  },
+  {
+    "name": "skills",
+    "lang": "python",
+    "loc": 14418,
+    "metrics": {
+      "ad": 8,
+      "iof": 91,
+      "dfl": 0,
+      "sldi": 1064,
+      "sri": 300,
+      "pcf": 33.800000000000004,
+      "bmv": 1754,
+      "edbf": 0
+    },
+    "score": 81,
+    "grade": "D"
+  },
+  {
+    "name": "markitdown",
+    "lang": "python",
+    "loc": 7041,
+    "metrics": {
+      "ad": 15,
+      "iof": 32,
+      "dfl": 0,
+      "sldi": 253,
+      "sri": 239,
+      "pcf": 4.7,
+      "bmv": 418,
+      "edbf": 0
+    },
+    "score": 85,
+    "grade": "D"
+  },
+  {
+    "name": "ComfyUI",
+    "lang": "python",
+    "loc": 26801,
+    "metrics": {
+      "ad": 15,
+      "iof": 38,
+      "dfl": 299975.53322637215,
+      "sldi": 679,
+      "sri": 801,
+      "pcf": 149.3,
+      "bmv": 646,
+      "edbf": 0.09453398730995193
+    },
+    "score": 88,
+    "grade": "C"
+  },
+  {
+    "name": "DeepSeek-V3",
+    "lang": "python",
+    "loc": 1402,
+    "metrics": {
+      "ad": 2,
+      "iof": 2,
+      "dfl": 0,
+      "sldi": 36,
+      "sri": 45,
+      "pcf": 27.6,
+      "bmv": 44,
+      "edbf": 0
+    },
+    "score": 88,
+    "grade": "C"
+  },
+  {
+    "name": "pytorch",
+    "lang": "python",
+    "loc": 68550,
+    "metrics": {
+      "ad": 534,
+      "iof": 184,
+      "dfl": 23.771334792122538,
+      "sldi": 1170,
+      "sri": 2707,
+      "pcf": 431.4,
+      "bmv": 1342,
+      "edbf": 0.000004799032149324094
+    },
+    "score": 83,
+    "grade": "D"
+  },
+  {
+    "name": "whisper",
+    "lang": "python",
+    "loc": 3980,
+    "metrics": {
+      "ad": 8,
+      "iof": 8,
+      "dfl": 2265666.950251256,
+      "sldi": 102,
+      "sri": 87,
+      "pcf": 6.2,
+      "bmv": 280,
+      "edbf": 0.7414285714285714
+    },
+    "score": 65,
+    "grade": "F"
+  },
+  {
+    "name": "thefuck",
+    "lang": "python",
+    "loc": 4032,
+    "metrics": {
+      "ad": 10,
+      "iof": 32,
+      "dfl": 574.969742063492,
+      "sldi": 48,
+      "sri": 26,
+      "pcf": 15.1,
+      "bmv": 112,
+      "edbf": 0.0002228144933110149
+    },
+    "score": 92,
+    "grade": "C"
+  },
+  {
+    "name": "spec-kit",
+    "lang": "python",
+    "loc": 21790,
+    "metrics": {
+      "ad": 246,
+      "iof": 144,
+      "dfl": 0,
+      "sldi": 296,
+      "sri": 1057,
+      "pcf": 39.9,
+      "bmv": 1586,
+      "edbf": 0
+    },
+    "score": 73,
+    "grade": "F"
+  },
+  {
+    "name": "browser-use",
+    "lang": "python",
+    "loc": 8336,
+    "metrics": {
+      "ad": 12,
+      "iof": 18,
+      "dfl": 0,
+      "sldi": 80,
+      "sri": 79,
+      "pcf": 20.7,
+      "bmv": 98,
+      "edbf": 0
+    },
+    "score": 95,
+    "grade": "C"
+  },
+  {
+    "name": "Deep-Live-Cam",
+    "lang": "python",
+    "loc": 7603,
+    "metrics": {
+      "ad": 6,
+      "iof": 71,
+      "dfl": 234195.35144022095,
+      "sldi": 438,
+      "sri": 272,
+      "pcf": 61.7,
+      "bmv": 368,
+      "edbf": 0.07354723559243946
+    },
+    "score": 83,
+    "grade": "D"
+  },
+  {
+    "name": "django",
+    "lang": "python",
+    "loc": 20329,
+    "metrics": {
+      "ad": 88,
+      "iof": 87,
+      "dfl": 0,
+      "sldi": 384,
+      "sri": 452,
+      "pcf": 160,
+      "bmv": 608,
+      "edbf": 0
+    },
+    "score": 88,
+    "grade": "C"
+  },
+  {
+    "name": "core",
+    "lang": "python",
+    "loc": 14255,
+    "metrics": {
+      "ad": 44,
+      "iof": 61,
+      "dfl": 50.144019642230795,
+      "sldi": 188,
+      "sri": 284,
+      "pcf": 0,
+      "bmv": 784,
+      "edbf": 0.00001649728449151531
+    },
+    "score": 88,
+    "grade": "C"
+  },
+  {
+    "name": "manim",
+    "lang": "python",
+    "loc": 24157,
+    "metrics": {
+      "ad": 74,
+      "iof": 41,
+      "dfl": 28.897131266299624,
+      "sldi": 339,
+      "sri": 316,
+      "pcf": 48.099999999999994,
+      "bmv": 392,
+      "edbf": 0.0000059744106009455076
+    },
+    "score": 92,
+    "grade": "C"
+  },
+  {
+    "name": "sherlock",
+    "lang": "python",
+    "loc": 1740,
+    "metrics": {
+      "ad": 10,
+      "iof": 18,
+      "dfl": 0,
+      "sldi": 12,
+      "sri": 19,
+      "pcf": 0,
+      "bmv": 106,
+      "edbf": 0
+    },
+    "score": 86,
+    "grade": "D"
+  },
+  {
+    "name": "devops-exercises",
+    "lang": "python",
+    "loc": 632,
+    "metrics": {
+      "ad": 0,
+      "iof": 0,
+      "dfl": 0,
+      "sldi": 0,
+      "sri": 5,
+      "pcf": 29.799999999999997,
+      "bmv": 12,
+      "edbf": 0
+    },
+    "score": 93,
+    "grade": "C"
+  },
+  {
+    "name": "funNLP",
+    "lang": "python",
+    "loc": 15,
+    "metrics": {
+      "ad": 0,
+      "iof": 2,
+      "dfl": 0,
+      "sldi": 0,
+      "sri": 0,
+      "pcf": 0,
+      "bmv": 2,
+      "edbf": 0
+    },
+    "score": 78,
+    "grade": "F"
+  },
+  {
+    "name": "autoresearch",
+    "lang": "python",
+    "loc": 1021,
+    "metrics": {
+      "ad": 0,
+      "iof": 14,
+      "dfl": 0,
+      "sldi": 185,
+      "sri": 44,
+      "pcf": 111.5,
+      "bmv": 76,
+      "edbf": 0
+    },
+    "score": 68,
+    "grade": "F"
+  },
+  {
+    "name": "ragflow",
+    "lang": "python",
+    "loc": 33000,
+    "metrics": {
+      "ad": 274,
+      "iof": 290,
+      "dfl": 0,
+      "sldi": 2115,
+      "sri": 1574,
+      "pcf": 58.2,
+      "bmv": 2776,
+      "edbf": 0
+    },
+    "score": 73,
+    "grade": "F"
+  },
+  {
+    "name": "javascript-algorithms",
+    "lang": "javascript",
+    "loc": 9966,
+    "metrics": {
+      "ad": 2,
+      "iof": 0,
+      "dfl": 0,
+      "sldi": 76,
+      "sri": 19,
+      "pcf": 0,
+      "bmv": 82,
+      "edbf": 0
+    },
+    "score": 98,
+    "grade": "B"
+  },
+  {
+    "name": "everything-claude-code",
+    "lang": "python",
+    "loc": 6554,
+    "metrics": {
+      "ad": 38,
+      "iof": 49,
+      "dfl": 0,
+      "sldi": 150,
+      "sri": 145,
+      "pcf": 33.4,
+      "bmv": 278,
+      "edbf": 0
+    },
+    "score": 85,
+    "grade": "D"
+  },
+  {
+    "name": "javascript",
+    "lang": "javascript",
+    "loc": 3067,
+    "metrics": {
+      "ad": 0,
+      "iof": 0,
+      "dfl": 0,
+      "sldi": 0,
+      "sri": 12,
+      "pcf": 0,
+      "bmv": 0,
+      "edbf": 0
+    },
+    "score": 99,
+    "grade": "B"
+  },
+  {
+    "name": "next.js",
+    "lang": "python",
+    "loc": 341,
+    "metrics": {
+      "ad": 4,
+      "iof": 0,
+      "dfl": 0,
+      "sldi": 0,
+      "sri": 1,
+      "pcf": 0,
+      "bmv": 8,
+      "edbf": 0
+    },
+    "score": 85,
+    "grade": "D"
+  },
+  {
+    "name": "30-seconds-of-code",
+    "lang": "typescript",
+    "loc": 12,
+    "metrics": {
+      "ad": 0,
+      "iof": 0,
+      "dfl": 0,
+      "sldi": 0,
+      "sri": 0,
+      "pcf": 0,
+      "bmv": 0,
+      "edbf": 0
+    },
+    "score": 100,
+    "grade": "A"
+  },
+  {
+    "name": "node",
+    "lang": "python",
+    "loc": 46343,
+    "metrics": {
+      "ad": 532,
+      "iof": 304,
+      "dfl": 0,
+      "sldi": 2179,
+      "sri": 908,
+      "pcf": 357,
+      "bmv": 2170,
+      "edbf": 0
+    },
+    "score": 78,
+    "grade": "F"
+  },
+  {
+    "name": "three.js",
+    "lang": "javascript",
+    "loc": 41893,
+    "metrics": {
+      "ad": 40,
+      "iof": 10,
+      "dfl": 0,
+      "sldi": 789,
+      "sri": 69,
+      "pcf": 0,
+      "bmv": 758,
+      "edbf": 0
+    },
+    "score": 96,
+    "grade": "B"
+  },
+  {
+    "name": "axios",
+    "lang": "typescript",
+    "loc": 735,
+    "metrics": {
+      "ad": 0,
+      "iof": 0,
+      "dfl": 208.7074829931973,
+      "sldi": 0,
+      "sri": 0,
+      "pcf": 0,
+      "bmv": 0,
+      "edbf": 0.00008843276089243838
+    },
+    "score": 100,
+    "grade": "A"
+  },
+  {
+    "name": "material-ui",
+    "lang": "typescript",
+    "loc": 8426,
+    "metrics": {
+      "ad": 3,
+      "iof": 6,
+      "dfl": 178.4050557797294,
+      "sldi": 97,
+      "sri": 30,
+      "pcf": 0,
+      "bmv": 74,
+      "edbf": 0.00007001813553476731
+    },
+    "score": 98,
+    "grade": "B"
+  },
+  {
+    "name": "Web-Dev-For-Beginners",
+    "lang": "python",
+    "loc": 228,
+    "metrics": {
+      "ad": 0,
+      "iof": 0,
+      "dfl": 0,
+      "sldi": 0,
+      "sri": 0,
+      "pcf": 0,
+      "bmv": 0,
+      "edbf": 0
+    },
+    "score": 100,
+    "grade": "A"
+  },
+  {
+    "name": "clean-code-javascript",
+    "lang": "javascript",
+    "loc": 1,
+    "metrics": {
+      "ad": 0,
+      "iof": 0,
+      "dfl": 0,
+      "sldi": 0,
+      "sri": 0,
+      "pcf": 0,
+      "bmv": 0,
+      "edbf": 0
+    },
+    "score": 100,
+    "grade": "A"
+  },
+  {
+    "name": "uptime-kuma",
+    "lang": "python",
+    "loc": 11,
+    "metrics": {
+      "ad": 0,
+      "iof": 2,
+      "dfl": 0,
+      "sldi": 4,
+      "sri": 0,
+      "pcf": 0,
+      "bmv": 0,
+      "edbf": 0
+    },
+    "score": 73,
+    "grade": "F"
+  },
+  {
+    "name": "svelte",
+    "lang": "typescript",
+    "loc": 12193,
+    "metrics": {
+      "ad": 0,
+      "iof": 0,
+      "dfl": 0,
+      "sldi": 0,
+      "sri": 24,
+      "pcf": 0,
+      "bmv": 0,
+      "edbf": 0
+    },
+    "score": 100,
+    "grade": "A"
+  },
+  {
+    "name": "github-readme-stats",
+    "lang": "typescript",
+    "loc": 187,
+    "metrics": {
+      "ad": 0,
+      "iof": 0,
+      "dfl": 21259.401069518717,
+      "sldi": 0,
+      "sri": 0,
+      "pcf": 0,
+      "bmv": 0,
+      "edbf": 0.009289453181320182
+    },
+    "score": 100,
+    "grade": "A"
+  },
+  {
+    "name": "Font-Awesome",
+    "lang": "typescript",
+    "loc": 3093,
+    "metrics": {
+      "ad": 0,
+      "iof": 0,
+      "dfl": 0,
+      "sldi": 0,
+      "sri": 0,
+      "pcf": 0,
+      "bmv": 0,
+      "edbf": 0
+    },
+    "score": 100,
+    "grade": "A"
+  },
+  {
+    "name": "json-server",
+    "lang": "typescript",
+    "loc": 1651,
+    "metrics": {
+      "ad": 0,
+      "iof": 4,
+      "dfl": 134.8709872804361,
+      "sldi": 0,
+      "sri": 48,
+      "pcf": 0,
+      "bmv": 74,
+      "edbf": 0.000048217810514929494
+    },
+    "score": 91,
+    "grade": "C"
+  },
+  {
+    "name": "reveal.js",
+    "lang": "typescript",
+    "loc": 3475,
+    "metrics": {
+      "ad": 0,
+      "iof": 0,
+      "dfl": 0,
+      "sldi": 4,
+      "sri": 13,
+      "pcf": 0,
+      "bmv": 28,
+      "edbf": 0
+    },
+    "score": 99,
+    "grade": "B"
+  },
+  {
+    "name": "express",
+    "lang": "javascript",
+    "loc": 4957,
+    "metrics": {
+      "ad": 2,
+      "iof": 0,
+      "dfl": 37.502118216663305,
+      "sldi": 0,
+      "sri": 17,
+      "pcf": 0,
+      "bmv": 18,
+      "edbf": 0.000015300994736070582
+    },
+    "score": 99,
+    "grade": "B"
+  },
+  {
+    "name": "anime",
+    "lang": "typescript",
+    "loc": 1,
+    "metrics": {
+      "ad": 0,
+      "iof": 0,
+      "dfl": 0,
+      "sldi": 0,
+      "sri": 0,
+      "pcf": 0,
+      "bmv": 0,
+      "edbf": 0
+    },
+    "score": 100,
+    "grade": "A"
+  },
+  {
+    "name": "Chart.js",
+    "lang": "typescript",
+    "loc": 8295,
+    "metrics": {
+      "ad": 0,
+      "iof": 0,
+      "dfl": 9.56913803496082,
+      "sldi": 16,
+      "sri": 23,
+      "pcf": 0,
+      "bmv": 78,
+      "edbf": 0.000003494678780211884
+    },
+    "score": 99,
+    "grade": "B"
+  },
+  {
+    "name": "33-js-concepts",
+    "lang": "javascript",
+    "loc": 436,
+    "metrics": {
+      "ad": 0,
+      "iof": 0,
+      "dfl": 0,
+      "sldi": 0,
+      "sri": 2,
+      "pcf": 0,
+      "bmv": 16,
+      "edbf": 0
+    },
+    "score": 96,
+    "grade": "B"
+  },
+  {
+    "name": "webpack",
+    "lang": "typescript",
+    "loc": 32726,
+    "metrics": {
+      "ad": 0,
+      "iof": 0,
+      "dfl": 13.366314245553994,
+      "sldi": 0,
+      "sri": 0,
+      "pcf": 0,
+      "bmv": 0,
+      "edbf": 0.000004393951568647196
+    },
+    "score": 100,
+    "grade": "A"
+  },
+  {
+    "name": "uBlock",
+    "lang": "python",
+    "loc": 99,
+    "metrics": {
+      "ad": 0,
+      "iof": 0,
+      "dfl": 0,
+      "sldi": 0,
+      "sri": 0,
+      "pcf": 0,
+      "bmv": 0,
+      "edbf": 0
+    },
+    "score": 100,
+    "grade": "A"
+  },
+  {
+    "name": "freeCodeCamp",
+    "lang": "typescript",
+    "loc": 9813,
+    "metrics": {
+      "ad": 12,
+      "iof": 2,
+      "dfl": 306.6919392642413,
+      "sldi": 25,
+      "sri": 118,
+      "pcf": 0,
+      "bmv": 46,
+      "edbf": 0.00011803825403762921
+    },
+    "score": 96,
+    "grade": "B"
+  },
+  {
+    "name": "openclaw",
+    "lang": "python",
+    "loc": 2195,
+    "metrics": {
+      "ad": 15,
+      "iof": 44,
+      "dfl": 0,
+      "sldi": 76,
+      "sri": 190,
+      "pcf": 0,
+      "bmv": 166,
+      "edbf": 0
+    },
+    "score": 70,
+    "grade": "F"
+  },
+  {
+    "name": "vue",
+    "lang": "typescript",
+    "loc": 11705,
+    "metrics": {
+      "ad": 0,
+      "iof": 0,
+      "dfl": 327.7818026484408,
+      "sldi": 139,
+      "sri": 25,
+      "pcf": 0,
+      "bmv": 166,
+      "edbf": 0.00012158354824181068
+    },
+    "score": 98,
+    "grade": "B"
+  },
+  {
+    "name": "n8n",
+    "lang": "python",
+    "loc": 4936,
+    "metrics": {
+      "ad": 18,
+      "iof": 37,
+      "dfl": 0,
+      "sldi": 72,
+      "sri": 189,
+      "pcf": 0,
+      "bmv": 156,
+      "edbf": 0
+    },
+    "score": 86,
+    "grade": "D"
+  },
+  {
+    "name": "vscode",
+    "lang": "python",
+    "loc": 1,
+    "metrics": {
+      "ad": 0,
+      "iof": 0,
+      "dfl": 0,
+      "sldi": 0,
+      "sri": 0,
+      "pcf": 0,
+      "bmv": 0,
+      "edbf": 0
+    },
+    "score": 100,
+    "grade": "A"
+  },
+  {
+    "name": "opencode",
+    "lang": "typescript",
+    "loc": 23628,
+    "metrics": {
+      "ad": 31,
+      "iof": 12,
+      "dfl": 216.733875063484,
+      "sldi": 130,
+      "sri": 100,
+      "pcf": 0,
+      "bmv": 398,
+      "edbf": 0.00008722285826739425
+    },
+    "score": 96,
+    "grade": "B"
+  },
+  {
+    "name": "dify",
+    "lang": "python",
+    "loc": 20519,
+    "metrics": {
+      "ad": 142,
+      "iof": 27,
+      "dfl": 0,
+      "sldi": 255,
+      "sri": 493,
+      "pcf": 99.2,
+      "bmv": 486,
+      "edbf": 0
+    },
+    "score": 86,
+    "grade": "D"
+  }
+]
