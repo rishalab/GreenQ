@@ -34,16 +34,19 @@
         <div id="loading" class="loading">Analyzing repository metrics... this may take a few seconds.</div>
         <div id="results" class="results">
             <div class="badge-display">
-                <div id="grade" class="grade">A</div>
-                <div>
-                    <div id="repoName" style="font-size: 24px; font-weight: 600;">user/repo</div>
-                    <div id="scoreLabel">Sustainability Score: 92/100</div>
-                </div>
+                <div id="repoName" style="font-size: 24px; font-weight: 600;">user/repo</div>
+                <div id="scoreLabel" style="color: #586069;">Sustainability Score: 92/100</div>
             </div>
+            
+            <div id="badgeGrid" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 30px;">
+                <!-- Individual badges will be injected here -->
+            </div>
+
             <div class="metrics-grid" id="metricsGrid"></div>
-            <h3 style="margin-top: 30px;">README Embedding</h3>
-            <p>Add this to your README.md to show your live energy grade:</p>
-            <pre id="markdownCode">[![GreenQ Score](http://localhost:3000/api/badge/user/repo)](http://localhost:3000/)</pre>
+            
+            <h3 style="margin-top: 30px;">README Badge Suite</h3>
+            <p>Copy this Markdown to embed the full sustainability report in your README:</p>
+            <pre id="markdownCode" style="white-space: pre-wrap;"></pre>
         </div>
     </div>
 
@@ -66,32 +69,48 @@
                 document.getElementById('loading').style.display = 'none';
                 document.getElementById('results').style.display = 'block';
                 
-                document.getElementById('grade').innerText = data.grade;
                 document.getElementById('repoName').innerText = `${data.user}/${data.repo}`;
-                document.getElementById('scoreLabel').innerText = `Sustainability Score: ${data.score}/100`;
+                document.getElementById('scoreLabel').innerText = `Composite Sustainability Score: ${data.score}/100`;
                 
                 const grid = document.getElementById('metricsGrid');
+                const badgeGrid = document.getElementById('badgeGrid');
                 grid.innerHTML = '';
+                badgeGrid.innerHTML = '';
+
                 const labels = {
                     ad: 'Allocation Density',
-                    iof: 'I/O Frequency',
-                    sldi: 'Spatial Locality Degradation',
-                    sri: 'Serialization/Reflection',
+                    iof: 'I/O Frequency Index',
+                    sldi: 'Spatial Locality',
+                    sri: 'Serialization Intensity',
                     pcf: 'Polling Factor',
-                    bmv: 'Branch Misprediction'
+                    bmv: 'Branch Prediction',
+                    dfl: 'Dependency Footprint',
+                    edbf: 'Dependency Bloat'
                 };
                 
+                const baseUrl = window.location.origin;
+                let markdown = '';
+
                 Object.entries(data.metrics).forEach(([k, v]) => {
                     if (labels[k]) {
+                        // Create metric card
                         const card = document.createElement('div');
                         card.className = 'metric-card';
                         card.innerHTML = `<div class="metric-val">${v.toFixed(2)}</div><div class="metric-label">${labels[k]}</div>`;
                         grid.appendChild(card);
+
+                        // Create badge image
+                        const grade = data.metricGrades[k];
+                        const badgeImg = document.createElement('img');
+                        badgeImg.src = `${baseUrl}/api/static-badge/${k}/${grade}`;
+                        badgeGrid.appendChild(badgeImg);
+
+                        // Add to markdown
+                        markdown += `[![${labels[k]}](${baseUrl}/api/static-badge/${k}/${grade})](${baseUrl}/) `;
                     }
                 });
                 
-                const baseUrl = window.location.origin;
-                document.getElementById('markdownCode').innerText = `[![GreenQ Score](${baseUrl}/api/badge/${data.user}/${data.repo})](${baseUrl}/)`;
+                document.getElementById('markdownCode').innerText = markdown.trim();
                 
             } catch (e) {
                 alert('Analysis failed. Please check the console.');
